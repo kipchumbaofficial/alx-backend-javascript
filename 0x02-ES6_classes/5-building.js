@@ -23,6 +23,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    return `Evacuate ${this._sqft} squarefeet`; 
+    return `Evacuate ${this._sqft} squarefeet`;
   }
 }
