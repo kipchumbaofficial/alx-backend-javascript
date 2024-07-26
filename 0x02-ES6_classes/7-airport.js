@@ -5,10 +5,10 @@ export default class Airport {
   }
 
   set name(newName) {
-    if (typeof newName == 'string') {
+    if (typeof newName === 'string') {
       this._name = newName;
     } else {
-      throw new TypeError('Name must be a string')
+      throw new TypeError('Name must be a string');
     }
   }
 
@@ -17,7 +17,7 @@ export default class Airport {
   }
 
   set code(newCode) {
-    if (typeof newCode == 'string') {
+    if (typeof newCode === 'string') {
       this._code = newCode;
     } else {
       throw new TypeError('Code must be a string');
@@ -29,6 +29,6 @@ export default class Airport {
   }
 
   toString() {
-    return `[object  ${this.code}]`
+    return `[object ${this.code}]`;
   }
 }
