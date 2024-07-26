@@ -35,6 +35,8 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    return (amount * conversionRate);
+    if (typeof amount === 'number' && typeof converionRate === 'number') {
+      return (amount * conversionRate);
+    }
   }
 }
