@@ -22,7 +22,7 @@ export default class Building {
     }
   }
 
-  static evacuationWarningMessage() {
-    throw new Error('Must be overriden when extending');
+  evacuationWarningMessage() {
+    return `Evacuate ${this._sqft} squarefeet`; 
   }
 }
