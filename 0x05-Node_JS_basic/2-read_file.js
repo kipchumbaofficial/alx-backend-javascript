@@ -1,3 +1,4 @@
+// Read file sync
 const fs = require('fs');
 
 /**
